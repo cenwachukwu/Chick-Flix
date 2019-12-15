@@ -16,8 +16,14 @@
 
 .Quiz-content{
     border: 2px solid black;
-    margin: 0 auto;
+    margin: 30px auto;
     height: 65%;
-    width: 75%;
-    
+    width: 75%;    
+}
+
+.Quiz{
+    border: 2px solid black;
+    margin: 20px auto;
+    height: 85%;
+    width: 80%;
 }
