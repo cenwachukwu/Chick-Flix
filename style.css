@@ -1,6 +1,14 @@
+/* basic css that we want to affect the whole page and remove white space */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+}
+
+.Quiz-Modal{
+    display: none;
+    border: 2px solid black;
+    height: 350px;
+    width: 350px;
 }

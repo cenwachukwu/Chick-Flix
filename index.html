@@ -12,7 +12,15 @@
 <body>
     <div>
         <h1>Welcome to ChickFlix</h1>
-        <button>Click to begin</button>
+        <button class="open-modal" onclick="openQuizSlide()">Click to begin</button>
+    </div>
+    <div id="Quiz-Modal-Slide" class="Quiz-Modal">
+        <span class="close-modal" onclick="closeQuizSlide()">&times;</span>
+        <div class="Quiz-content">
+            <div class="Quiz">
+                <h2>quiz 1</h2>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
