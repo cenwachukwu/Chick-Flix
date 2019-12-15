@@ -46,19 +46,24 @@ function loadCard() {
 }
 
 const Quiz = document.querySelectorAll(".Quiz")
-const box1 = document.querySelector(".box1")
+// const box1 = document.querySelector(".box1")
+const testing = document.querySelector(".testing")
 const box1a = document.querySelector(".box1a")
 const box1b = document.querySelector(".box1b")
 const next = document.querySelector(".next") 
 const previous = document.querySelector(".previous")
-box1.addEventListener("click", function(evt){
+testing.addEventListener("click", function(evt){
     evt.preventDefault
     console.log(evt)
     // this would make this object into an array
-    quizCards = Object.entries(quizCards[j]) 
+    quizCards = Object.entries(quizCards[j])
+    console.log(quizCards)
     frontCard = box1a
+    console.log(frontCard)
     backCard = box1b
+    console.log(backCard)
     loadCard()
+    testing.style.display = "none";
 })
 next.addEventListener("click", function(evt){
     evt.preventDefault
