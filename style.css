@@ -4,11 +4,20 @@
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+    /* border: 2px solid black; */
 }
 
 .Quiz-Modal{
     display: none;
     border: 2px solid black;
-    height: 350px;
-    width: 350px;
+    height: 770px;
+    width: 100%;
+}
+
+.Quiz-content{
+    border: 2px solid black;
+    margin: 0 auto;
+    height: 65%;
+    width: 75%;
+    
 }
