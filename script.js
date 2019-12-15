@@ -47,6 +47,7 @@ function loadCard() {
 
 const Quiz = document.querySelectorAll(".Quiz")
 const startQuiz = document.querySelector(".startQuiz")
+const flashCard = document.querySelectorAll(".flash-card")
 const box1a = document.querySelector(".box1a")
 const box1b = document.querySelector(".box1b")
 const next = document.querySelector(".next") 
@@ -57,14 +58,13 @@ startQuiz.addEventListener("click", function(evt){
     console.log(evt)
     // this would make this object into an array
     quizCards = Object.entries(quizCards[j])
-    console.log(quizCards)
     frontCard = box1a
-    console.log(frontCard)
     backCard = box1b
-    console.log(backCard)
     loadCard()
     startQuiz.style.display = "none";
     next.classList.remove("inactive");
+    frontCard.style.display = "block";
+    backCard.style.display = "block";
 })
 
 next.addEventListener("click", function(evt){

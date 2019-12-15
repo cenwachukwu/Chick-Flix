@@ -37,10 +37,11 @@
 .Quiz{
     border: 2px solid white;
     margin: 20px auto;
-    padding-top: 100px;
+    /* padding-top: 100px; */
     height: 85%;
     width: 80%;
     color: white;
+    position: relative;
 }
 
 /* this is styling for the span that closes the whole modal  */
@@ -73,4 +74,43 @@
 /* styling for the button to get them inactive*/
 .inactive {
     display: none;
+}
+
+/* trying to hover to flip the card based on the front and back of the card */
+
+.flash-card{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-content: center; */
+    overflow: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    border-width: 2px;
+    border-style: outset; 
+    transition: transform 500ms ease-in-out;
+    color: white;
+    text-align: center;
+}
+
+
+.Quiz:hover .front-card{
+    transform: rotateY(-180deg);
+}
+
+.Quiz:hover .back-card{
+    transform: rotateY(0);
+}
+
+.front-card{
+    border-color: rgb(187, 221, 63);
+    font-size: 35px;
+    overflow: hidden;
+}
+
+.back-card{
+    transform: rotateY(-180deg);
 }
