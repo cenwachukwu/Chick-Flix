@@ -4,26 +4,55 @@
     padding: 0;
     box-sizing: border-box;
     text-align: center;
-    /* border: 2px solid black; */
+}
+
+.open-modal{
+    margin: 30px auto;
+    display: block;
 }
 
 .Quiz-Modal{
     display: none;
-    border: 2px solid black;
-    height: 770px;
+    position: fixed;
+    z-index: 1;
+    padding: 10px 62px 0px 62px;
+    left: 0;
+    top: 0;
     width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
 }
 
+
+/* this is the tag we would mess with for responsivity */
 .Quiz-content{
-    border: 2px solid black;
+    border: 2px solid white;
     margin: 30px auto;
     height: 65%;
     width: 75%;    
 }
 
 .Quiz{
-    border: 2px solid black;
+    border: 2px solid white;
     margin: 20px auto;
     height: 85%;
     width: 80%;
+}
+
+/* this is styling for the span that closes the whole modal  */
+.close-modal {
+    color: white;
+    position: absolute;
+    /* we need it to be very close to the top and the right */
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.close-modal:hover,
+.close-modal:focus {
+    color: #999;
+    cursor: pointer;
 }
