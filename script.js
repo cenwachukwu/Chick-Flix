@@ -278,6 +278,23 @@ startQuiz3.addEventListener("click", function (evt) {
     backCard.style.display = "block";
 })
 
+startQuiz4.addEventListener("click", function (evt) {
+    evt.preventDefault
+    console.log(evt)
+    // this would make this object into an array
+    quizCards = Object.entries(quizCards[j, 3])
+    console.log(quizCards)
+    frontCard = box4a
+    console.log(frontCard)
+    backCard = box4b
+    console.log(backCard)
+    loadCard()
+    startQuiz4.style.display = "none";
+    next.classList.remove("inactive");
+    frontCard.style.display = "block";
+    backCard.style.display = "block";
+})
+
 next.addEventListener("click", function (evt) {
     evt.preventDefault
     nextItem()
