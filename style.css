@@ -63,11 +63,10 @@
 }
 
 /* styling for the click to start on the flashcard */
-.startQuiz{
+.startQuizContainer{
     font-size: 67px;
 }
-.startQuiz:hover{
-    font-size: 100px;
+.startQuizContainer:hover{
     color: yellow;
     text-decoration: underline;
 }
