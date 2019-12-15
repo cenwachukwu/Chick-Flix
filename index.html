@@ -12,7 +12,8 @@
 <body>
     <div>
         <h1>Welcome to ChickFlix</h1>
-        <button class="open-modal" onclick="openQuizSlide()">Click to begin</button>
+        <button class="open-modal" onclick="openQuizSlide();toSlide(1)">Click to begin</button>
+        <button class="open-modal" onclick="openQuizSlide();toSlide(2)">Click to begin</button>
     </div>
     <div id="Quiz-Modal-Slide" class="Quiz-Modal">
         <span class="close-modal" onclick="closeQuizSlide()">&times;</span>
@@ -24,7 +25,13 @@
                 <div class="flash-card front-card box1a"></div>
                 <div class="flash-card back-card box1b"></div>
             </div>
-            
+            <div class="Quiz box2">
+                <div class="startQuizContainer">
+                    <h2 class="startQuiz2">Click to begin</h2>
+                </div>
+                <div class="flash-card front-card box2a"></div>
+                <div class="flash-card back-card box2b"></div>
+            </div>
             <button class="previous inactive">prev</button>
             <button class="next inactive">next</button>
         </div>
