@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+    /* color: white; */
 }
 
 .open-modal{
@@ -38,6 +39,7 @@
     margin: 20px auto;
     height: 85%;
     width: 80%;
+    color: white;
 }
 
 /* this is styling for the span that closes the whole modal  */
