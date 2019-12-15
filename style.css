@@ -37,6 +37,7 @@
 .Quiz{
     border: 2px solid white;
     margin: 20px auto;
+    padding-top: 100px;
     height: 85%;
     width: 80%;
     color: white;
@@ -57,4 +58,19 @@
 .close-modal:focus {
     color: #999;
     cursor: pointer;
+}
+
+/* styling for the click to start on the flashcard */
+.startQuiz{
+    font-size: 67px;
+}
+.startQuiz:hover{
+    font-size: 100px;
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* styling for the button to get them inactive*/
+.inactive {
+    display: none;
 }
