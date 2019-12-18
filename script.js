@@ -2,15 +2,20 @@ const modalBox = document.getElementById('Quiz-Modal-Slide');
 const openModal = document.querySelector('.open-modal');
 const Quiz = document.querySelectorAll(".Quiz");
 
+//opening the modal
 function openQuizSlide() {
     modalBox.style.display = "block";
     openModal.style.display = "none";
 }
+
+//closing the modal
 function closeQuizSlide() {
     modalBox.style.display = "none";
     openModal.style.display = "block";
+    location.reload()
 }
 
+//setting index and functions to it so that you're able to click open a particular deck and have only it show
 let slideIndex = 1;
 showSlide(slideIndex);
 
@@ -194,10 +199,29 @@ function prevItem() {
     i = i - 1; // decrease by one
     return quizCards[i]; // give us back the item of where we are now
 }
+
+function shuffle(quizCards) {
+    var m = quizCards.length, t, i;
+  
+    // While there remain elements to shuffle…
+    while (m) {
+  
+      // Pick a remaining element…
+      i = Math.floor(Math.random() * m--);
+  
+      // And swap it with the current element.
+      t = quizCards[m];
+      quizCards[m] = quizCards[i];
+      quizCards[i] = t;
+    }
+  
+    return quizCards;
+}
+
 function loadCard() {
     frontCard.textContent = quizCards[i][0]  //now you can access the array index and make the text content of the front and back card different things 
     backCard.textContent = quizCards[i][1]
-}
+};
 
 const startQuiz = document.querySelector(".startQuiz")
 const flashCard = document.querySelectorAll("flash-card")
@@ -237,6 +261,7 @@ startQuiz.addEventListener("click", function (evt) {
     quizCards = Object.entries(quizCards[j])
     frontCard = box1a
     backCard = box1b
+    shuffle(quizCards)
     loadCard()
     startQuiz.style.display = "none";
     next.classList.remove("inactive");
@@ -254,6 +279,8 @@ startQuiz2.addEventListener("click", function (evt) {
     console.log(frontCard)
     backCard = box2b
     console.log(backCard)
+    shuffle(quizCards)
+    console.log(quizCards)
     loadCard()
     startQuiz2.style.display = "none";
     next.classList.remove("inactive");
@@ -271,6 +298,7 @@ startQuiz3.addEventListener("click", function (evt) {
     console.log(frontCard)
     backCard = box3b
     console.log(backCard)
+    shuffle(quizCards)
     loadCard()
     startQuiz3.style.display = "none";
     next.classList.remove("inactive");
@@ -288,6 +316,7 @@ startQuiz4.addEventListener("click", function (evt) {
     console.log(frontCard)
     backCard = box4b
     console.log(backCard)
+    shuffle(quizCards)
     loadCard()
     startQuiz4.style.display = "none";
     next.classList.remove("inactive");
@@ -305,6 +334,7 @@ startQuiz5.addEventListener("click", function (evt) {
     console.log(frontCard)
     backCard = box5b
     console.log(backCard)
+    shuffle(quizCards)
     loadCard()
     startQuiz5.style.display = "none";
     next.classList.remove("inactive");
@@ -322,8 +352,63 @@ startQuiz6.addEventListener("click", function (evt) {
     console.log(frontCard)
     backCard = box6b
     console.log(backCard)
+    shuffle(quizCards)
     loadCard()
     startQuiz6.style.display = "none";
+    next.classList.remove("inactive");
+    frontCard.style.display = "block";
+    backCard.style.display = "block";
+})
+
+startQuiz7.addEventListener("click", function (evt) {
+    evt.preventDefault
+    console.log(evt)
+    // this would make this object into an array
+    quizCards = Object.entries(quizCards[j, 6])
+    console.log(quizCards)
+    frontCard = box7a
+    console.log(frontCard)
+    backCard = box7b
+    console.log(backCard)
+    shuffle(quizCards)
+    loadCard()
+    startQuiz7.style.display = "none";
+    next.classList.remove("inactive");
+    frontCard.style.display = "block";
+    backCard.style.display = "block";
+})
+
+startQuiz8.addEventListener("click", function (evt) {
+    evt.preventDefault
+    console.log(evt)
+    // this would make this object into an array
+    quizCards = Object.entries(quizCards[j, 7])
+    console.log(quizCards)
+    frontCard = box8a
+    console.log(frontCard)
+    backCard = box8b
+    console.log(backCard)
+    shuffle(quizCards)
+    loadCard()
+    startQuiz8.style.display = "none";
+    next.classList.remove("inactive");
+    frontCard.style.display = "block";
+    backCard.style.display = "block";
+})
+
+startQuiz9.addEventListener("click", function (evt) {
+    evt.preventDefault
+    console.log(evt)
+    // this would make this object into an array
+    quizCards = Object.entries(quizCards[j, 8])
+    console.log(quizCards)
+    frontCard = box9a
+    console.log(frontCard)
+    backCard = box9b
+    console.log(backCard)
+    shuffle(quizCards)
+    loadCard()
+    startQuiz9.style.display = "none";
     next.classList.remove("inactive");
     frontCard.style.display = "block";
     backCard.style.display = "block";

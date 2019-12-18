@@ -10,8 +10,10 @@
 </head>
 
 <body>
-    <div>
-        <h1>Welcome to ChickFlix</h1>
+    <h1>Welcome to ChickFlix</h1>
+    
+    <div class="flashCard__buttons">
+        <!-- buttons to open the slide, we eventually want make images with these buttons underneth them -->
         <button class="open-modal" onclick="openQuizSlide();toSlide(1)">Africa</button>
         <button class="open-modal" onclick="openQuizSlide();toSlide(2)">Central Dogma of Genetics</button>
         <button class="open-modal" onclick="openQuizSlide();toSlide(3)"> Female inventors</button>
@@ -22,13 +24,25 @@
         <button class="open-modal" onclick="openQuizSlide();toSlide(8)">Female world leaders</button>
         <button class="open-modal" onclick="openQuizSlide();toSlide(9)">Female Athletes</button>
     </div>
+
+    <!-- div containing the slide -->
     <div id="Quiz-Modal-Slide" class="Quiz-Modal">
+
+        <!-- the close (x) button -->
         <span class="close-modal" onclick="closeQuizSlide()">&times;</span>
+
+        <!-- class="Quiz-content": group of flash cards -->
         <div class="Quiz-content">
+
+            <!--class="Quiz box1": individual flash card deck  -->
             <div class="Quiz box1">
+
+                <!-- class="startQuizContainer": click to start button -->
                 <div class="startQuizContainer">
                     <h2 class="startQuiz">Click to begin</h2>
                 </div>
+
+                <!--class="flash-card front-card box1a": working to reduce the number of classes b/c they can become confusing  -->
                 <div class="flash-card front-card box1a"></div>
                 <div class="flash-card back-card box1b"></div>
             </div>

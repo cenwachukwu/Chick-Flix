@@ -4,14 +4,15 @@
     padding: 0;
     box-sizing: border-box;
     text-align: center;
-    /* color: white; */
 }
 
+/* styling for the buttons */
 .open-modal{
     margin: 30px auto;
     display: block;
 }
 
+/* styling for the modal */
 .Quiz-Modal{
     display: none;
     position: fixed;
@@ -26,7 +27,10 @@
 }
 
 
-/* this is the tag we would mess with for responsivity */
+/* 
+this is the tag we would mess with for responsivity 
+contains styling for the group of flash cards
+*/
 .Quiz-content{
     border: 2px solid white;
     margin: 30px auto;
@@ -34,6 +38,7 @@
     width: 75%;    
 }
 
+/* styling for the actual flash card  */
 .Quiz{
     display: none;
     border: 2px solid white;
