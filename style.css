@@ -6,6 +6,18 @@
     text-align: center;
 }
 
+body{
+    margin: 0 auto;
+}
+
+/* rendering the buttons flex */
+.flashCard__buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    column-gap: 0rem;
+}
+
 /* styling for the buttons */
 .open-modal{
     margin: 30px auto;
@@ -34,6 +46,8 @@ contains styling for the group of flash cards
 .Quiz-content{
     border: 2px solid white;
     margin: 30px auto;
+    margin-top: 11rem;
+    /* padding: 10rem; */
     height: 65%;
     width: 75%;    
 }
@@ -43,7 +57,7 @@ contains styling for the group of flash cards
     display: none;
     border: 2px solid white;
     margin: 20px auto;
-    /* padding-top: 100px; */
+    margin-top: 2rem;
     height: 85%;
     width: 80%;
     color: white;
@@ -88,9 +102,7 @@ contains styling for the group of flash cards
     position: absolute;
     width: 100%;
     height: 100%;
-    /* display: flex;
-    justify-content: center;
-    align-content: center; */
+    padding: 8.5rem;
     overflow: hidden;
     backface-visibility: hidden;
     border-radius: 16px;
@@ -112,10 +124,70 @@ contains styling for the group of flash cards
 
 .front-card{
     border-color: rgb(187, 221, 63);
-    font-size: 35px;
+    font-size: 45px;
     overflow: hidden;
 }
 
 .back-card{
     transform: rotateY(-180deg);
 }
+
+/* media queries */
+
+/* ipad pro */
+@media only screen and (max-width: 1024px){
+    body{
+        padding: 2rem;
+        width: 100%;
+    }
+}
+
+/* large devices and ipad */
+@media only screen and (max-width: 992px), (max-width: 768px){
+    .flashCard__buttons{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flash-card{
+        width: 100%;
+        height: 100%;
+        padding: 3rem;
+        padding-top: 5rem;
+        border-width: 1px;
+    }
+}
+
+/* small devices */
+@media only screen and (max-width: 576px){
+    
+}
+
+/* extra small devices like iphones */
+@media only screen and (max-width: 375px), (max-width: 414px), (max-width: 576px){
+    .flashCard__buttons{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Quiz-Modal{
+        padding: 10px 22px 0px 22px;
+    }
+    .Quiz-content{
+        width: 100%;
+        height: 75%;
+        margin-top: 7rem;
+    }
+    .Quiz{
+        margin: 20px auto;
+        margin-top: 2rem;
+    }
+    .flash-card{
+        width: 100%;
+        height: 100%;
+        padding: 3rem;
+        padding-top: 6rem;
+        border-width: 1px;
+    }
+    .back-card{
+        padding-top: 10rem;
+    }   
+}
+
+
