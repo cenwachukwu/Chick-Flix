@@ -8,6 +8,8 @@
 
 body{
     margin: 0 auto;
+    width: 100%;
+    width: 100vw;
 }
 
 /* rendering the buttons flex */
@@ -95,6 +97,16 @@ contains styling for the group of flash cards
     display: none;
 }
 
+/* general button style */
+button{
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    border: 2px solid rgb(232, 190, 79);
+    font-size: 14px;
+    background-color: rgb(235, 200, 106);
+}
+
 /* trying to hover to flip the card based on the front and back of the card */
 
 .flash-card{
@@ -156,13 +168,8 @@ contains styling for the group of flash cards
     }
 }
 
-/* small devices */
-@media only screen and (max-width: 576px){
-    
-}
-
 /* extra small devices like iphones */
-@media only screen and (max-width: 375px), (max-width: 414px), (max-width: 576px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 560px){
     .flashCard__buttons{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -181,13 +188,31 @@ contains styling for the group of flash cards
     .flash-card{
         width: 100%;
         height: 100%;
-        padding: 3rem;
-        padding-top: 6rem;
+        padding: 6rem 4rem 4rem 4rem;
         border-width: 1px;
     }
     .back-card{
         padding-top: 10rem;
-    }   
+    }  
+    .front-card{
+        font-size: 36px;
+    } 
+    button{
+        
+        width: 75px;
+        padding: 6px;
+        font-size: 12px;
+    }
 }
 
+/* small devices */
+@media only screen and (max-width: 320px){
+    .front-card{
+        font-size: 30px;
+        padding-left: 0.5rem;
+    }
+    .startQuizContainer{
+        font-size: 35px;
+    } 
+}
 
