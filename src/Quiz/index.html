@@ -9,14 +9,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to quiz</h1>
     <div class="home">
         <a href="https://chick-flix.netlify.com/">ChickFlix</a>
-    </div>
-    <div class="link-Button">
         <a href="https://chick-flix-flashcard.netlify.com/">Flashcard</a>
     </div>
-    <button class="open-modal" onclick="openQuizSlide();toSlide(1)">Quiz</button>
+    <button class="open-modal" onclick="openQuizSlide()">Quiz</button>
     <div id="Quiz-Modal-Slide" class="Quiz-Modal">
         <div>
             <span class="close-modal" onclick="closeQuizSlide()">&times;</span>
@@ -28,21 +25,21 @@
                 </div>
                 <div class="quiz-options">
                     <div class="option-box">
-                        <button class="option1">Options</button>
+                        <button class="option1" onclick="option()">Options</button>
                     </div>
                     <div class="option-box">
-                        <button class="option2">Options</button>
+                        <button class="option2" onclick="option()">Options</button>
                     </div>
                     <div class="option-box">
-                        <button class="option3">Options</button>
+                        <button class="option3" onclick="option()">Options</button>
                     </div>
                     <div class="option-box">
-                        <button class="option4">Options</button>
+                        <button class="option4" onclick="option()">Options</button>
                     </div>
                 </div>
             </div>
             <div>
-                <button class="next inactive">next</button>
+                <button class="next inactive" onclick="option()">next</button>
             </div>
         </div>
     </div>
