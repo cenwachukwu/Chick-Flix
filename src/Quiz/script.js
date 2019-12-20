@@ -18,9 +18,42 @@ function closeQuizSlide() {
     openModal.style.display = "inline-block";
 }
 
+// a callback function to show that buttons work
 function option() {
-    alert ("I have been Clicked!!!")
+    alert("I have been Clicked!!!")
 }
+
+// make an empty array to store data from the api
+let quizCards = []
+
+let i = 0
+
+function shuffle(quizCards) {
+    var m = quizCards.length, t, i;
+
+    // While there remain elements to shuffle…
+    while (m) {
+
+        // Pick a remaining element…
+        i = Math.floor(Math.random() * m--);
+
+        // And swap it with the current element.
+        t = quizCards[m];
+        quizCards[m] = quizCards[i];
+        quizCards[i] = t;
+    }
+
+    return quizCards;
+}
+
+function loadCard() {
+    Question.innerText = quizCards[i].question
+    option1.innerText = quizCards[i].incorrect_answers[2]
+    option2.innerText = quizCards[i].correct_answer
+    option3.innerText = quizCards[i].incorrect_answers[0]
+    option4.innerText = quizCards[i].incorrect_answers[1]
+};
+
 // setting evt to pull infomation from the api
 const url3 = "https://opentdb.com/api.php?amount=10&category=20&difficulty=easy&type=multiple"
 openModal.addEventListener("click", function (evt) {
@@ -29,12 +62,13 @@ openModal.addEventListener("click", function (evt) {
     fetch(url3)
         .then(res => res.json())
         .then(res => {
-            console.log(res.results[0])
-            Question.innerText = res.results[0].question
-            option1.innerText = res.results[0].incorrect_answers[2]
-            option2.innerText = res.results[0].correct_answer
-            option3.innerText = res.results[0].incorrect_answers[0]
-            option4.innerText = res.results[0].incorrect_answers[1]
+            console.log(res.results)
+            let data = res.results
+            quizCards.push(...data);
+            console.log(quizCards)
+            shuffle(quizCards)
+            console.log(quizCards)
+            loadCard()
         })
         .catch(err => console.log(err))
-}) 
+})
