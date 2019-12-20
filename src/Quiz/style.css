@@ -6,12 +6,15 @@
     font-family: 'Roboto Mono', monospace;
 }
 
-body{
-    margin: 2rem auto;
-    margin-top: 0;
+html, body {
+    height: 100%;
     width: 100%;
-    width: 100vw;
-    
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+    border: 0.8rem solid rgba(247, 195, 57, 0.434); 
 }
 
 .home{
