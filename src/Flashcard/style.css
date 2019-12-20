@@ -4,18 +4,19 @@
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+    
 }
 
 body{
-    margin: 2rem auto;
-    margin-top: 0;
+    margin: 0 auto;
     width: 100%;
     width: 100vw;
+    border: 0.8rem solid rgba(247, 195, 57, 0.434); 
 }
 
 .home{
-    margin-bottom: 2rem;
-    border: 2px solid black;
+    margin: 2rem;
+    /* border: 2px solid black; */
     text-align: left;
 }
 

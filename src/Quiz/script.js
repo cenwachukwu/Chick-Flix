@@ -14,8 +14,7 @@ function openQuizSlide() {
 
 function closeQuizSlide() {
     modalBox.style.display = "none";
-    openModal.style.display = "block";
-    location.reload()
+    openModal.style.display = "inline-block";
 }
 
 function option() {
