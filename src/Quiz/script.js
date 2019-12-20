@@ -61,7 +61,7 @@ function nextItem() {
 }
 
 // setting evt to pull infomation from the api
-const url3 = "https://opentdb.com/api.php?amount=10&category=26"
+const url3 = "https://opentdb.com/api.php?amount=10&category=17"
 openModal.addEventListener("click", function (evt) {
     evt.preventDefault()
     console.log(evt)
