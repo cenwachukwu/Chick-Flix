@@ -14,7 +14,6 @@ body{
 
 .Quiz-Modal{
     margin: 0 auto;
-    border: 2px solid white;
     display: none;
     position: fixed;
     z-index: 1;
@@ -29,8 +28,8 @@ body{
 
 .Quiz-content{
     border: 2px solid white;
-    /* margin: 30px auto; */
-    /* padding: 10rem; */
+    margin: 30px auto;
+    margin-top: 7rem;
     height: 75%;
     width: 100%;    
 }
@@ -40,7 +39,7 @@ body{
     /* display: none; */
     border: 2px solid white;
     margin: 20px auto;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     height: 85%;
     width: 80%;
     color: white;
@@ -49,7 +48,7 @@ body{
 
 .close-modal {
     color: white;
-    /* position: absolute; */
+    position: absolute;
     /* we need it to be very close to the top and the right */
     top: 10px;
     right: 25px;
