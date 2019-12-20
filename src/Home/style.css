@@ -17,8 +17,7 @@ html, body {
     height: 100%;
     width: 100%;
     background-color: rgba(247, 195, 57, 0.8);
-    border: 0.8rem solid rgba(247, 195, 57, 0.434);
-}
+    border: 0.8rem solid rgba(247, 195, 57, 0.434); }
 
 .headertag{
     margin: 0 auto;
@@ -63,3 +62,52 @@ a:hover{
     background-color: rgba(94, 77, 2, 0.3);
 }
   
+/* media queries */
+
+/* ipad pro */
+@media only screen and (max-width: 1024px){
+    .cover-block{
+        padding: 2rem;
+    }
+
+    .headertag{
+        margin-top: 20rem;
+        font-size: 6rem;
+        width: 80%;
+        
+    }
+    
+    h2{
+        text-align: center;
+    }
+
+    p{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 1rem;
+    }
+}
+
+/* large devices and ipad */
+@media only screen and (max-width: 992px), (max-width: 768px){
+    .headertag{
+        margin-top: 13rem;
+    }
+    p{
+        text-align: justify;
+    }
+    .link-button-home{
+        margin-top: 6rem;
+    }
+}
+
+/* extra small devices like iphones */
+@media only screen and (min-device-width : 320px) and (max-device-width : 560px){
+    
+}
+
+/* small devices */
+@media only screen and (max-width: 320px){
+    
+}
+
