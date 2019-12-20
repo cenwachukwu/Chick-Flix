@@ -54,8 +54,14 @@ function loadCard() {
     option4.innerText = quizCards[i].incorrect_answers[1]
 };
 
+function nextItem() {
+    i = i + 1; // increase i by one
+    i = i % quizCards.length; // if we've gone too high, start from `0` again
+    return quizCards[i]; // give us back the item of where we are now
+}
+
 // setting evt to pull infomation from the api
-const url3 = "https://opentdb.com/api.php?amount=10&category=20&difficulty=easy&type=multiple"
+const url3 = "https://opentdb.com/api.php?amount=10&category=26"
 openModal.addEventListener("click", function (evt) {
     evt.preventDefault()
     console.log(evt)
@@ -71,4 +77,10 @@ openModal.addEventListener("click", function (evt) {
             loadCard()
         })
         .catch(err => console.log(err))
+})
+
+next.addEventListener("click", function (evt) {
+    evt.preventDefault
+    nextItem()
+    loadCard()
 })
