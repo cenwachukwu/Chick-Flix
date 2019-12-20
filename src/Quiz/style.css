@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    margin: 2rem auto;
+    margin-top: 0;
+    width: 100%;
+    width: 100vw;
+}
+
+.Quiz-Modal{
+    margin: 0 auto;
+    border: 2px solid white;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 10px 62px 0px 62px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.Quiz-content{
+    border: 2px solid white;
+    /* margin: 30px auto; */
+    /* padding: 10rem; */
+    height: 75%;
+    width: 100%;    
+}
+
+/* styling for the actual flash card  */
+.Quiz{
+    /* display: none; */
+    border: 2px solid white;
+    margin: 20px auto;
+    margin-top: 2rem;
+    height: 85%;
+    width: 80%;
+    color: white;
+    position: relative;
+}
+
+.close-modal {
+    color: white;
+    /* position: absolute; */
+    /* we need it to be very close to the top and the right */
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.close-modal:hover,
+.close-modal:focus {
+    color: #999;
+    cursor: pointer;
+}
