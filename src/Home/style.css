@@ -17,7 +17,8 @@ html, body {
     height: 100%;
     width: 100%;
     background-color: rgba(247, 195, 57, 0.8);
-    border: 0.8rem solid rgba(247, 195, 57, 0.434); }
+    border: 0.8rem solid rgba(247, 195, 57, 0.434); 
+}
 
 .headertag{
     margin: 0 auto;
@@ -72,7 +73,7 @@ a:hover{
 
     .headertag{
         margin-top: 20rem;
-        font-size: 6rem;
+        font-size: 5rem;
         width: 80%;
         
     }
@@ -99,15 +100,83 @@ a:hover{
     .link-button-home{
         margin-top: 6rem;
     }
+    a{
+        font-size: 2.8rem;
+    }
+
 }
+
 
 /* extra small devices like iphones */
 @media only screen and (min-device-width : 320px) and (max-device-width : 560px){
-    
+    .headertag{
+        font-size: 2.5rem;
+        margin-top: 11.5rem;
+    }
+
+    p{
+        text-align: justify;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    .link-Button{
+        width: 30%;
+        margin: 5px;
+        padding-top: 1rem;
+        height: 4rem;
+    }
+
+    a{
+        font-size: 1rem;
+    }
+
+    .link-button-home{
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-device-width : 480px){
+    .headertag{
+        font-size: 2.5rem;
+        margin-top: 11.5rem;
+    }
+
+    p{
+        text-align: justify;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    .link-Button{
+        width: 30%;
+        margin: 5px;
+        padding-top: 1rem;
+        height: 4rem;
+    }
+
+    a{
+        font-size: 1rem;
+    }
+
+    .link-button-home{
+        margin-top: 2rem;
+        height: 3rem;
+    }
 }
 
 /* small devices */
 @media only screen and (max-width: 320px){
-    
+    .headertag{
+        font-size: 2.1rem;
+        margin-top: 6rem;
+    }
+    .link-Button{
+        padding-top: 0.5rem;
+        height: 3rem;
+    }
+    a{
+        font-size: 0.8rem;
+    }
 }
 
