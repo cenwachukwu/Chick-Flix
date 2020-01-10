@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     text-align: center;
-    
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -97,7 +96,7 @@ button{
     border: 2px solid white;
     /* margin: 2rem; */
     margin-top: 2.5rem;
-    /* padding: 3rem; */
+    padding: 3rem;
     height: 85%;
     width: 80%;
     color: white;
@@ -127,15 +126,21 @@ button{
 }
 
 /* inside the modal */
-.Question-box{
-    margin: 4rem auto;
-}
-h3{
+.question{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
     font-size: 2rem;
 }
-.option-box{
-    margin: 1rem;
+
+.answers{
+    margin: 0 auto;
+    font-size: 1.2rem;
+    /* text-align: left; */
+    padding: 1rem;
+    display: inline-block;
 }
-.answer{
-    display: none;
+
+label{
+    display: block;
+    text-align: left;
 }

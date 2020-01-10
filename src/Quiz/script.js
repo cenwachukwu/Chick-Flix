@@ -21,22 +21,24 @@ function closeQuizSlide() {
 (function () {
     const myQuestions = [
         {
-            question: "who are you?",
+            question: "Which movie does Meg Ryan co-star in?",
             answers: {
-                a: "nneoma",
-                b: "super man",
-                c: "speedometer"
+                a: "The Ugly Truth",
+                b: "When Harry met Sally",
+                c: "What Women Want",
+                d: "The Notebook"
             },
-            correctAnswer: "a"
+            correctAnswer: "b"
         },
         {
-            question: "are you the best sister?",
+            question: "Which of the following movies is based on long distance friendships?",
             answers: {
-                a: "site 1",
-                b: "numbers",
-                c: "shape"
+                a: "While You Were Sleeping",
+                b: "The Proposal",
+                c: "Enchanted",
+                d: "The Sisterhood of the Traveling Pants"
             },
-            correctAnswer: "site 1"
+            correctAnswer: "d"
         },
         {
             question: "How many friends i have?",
