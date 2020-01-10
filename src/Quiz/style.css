@@ -64,7 +64,11 @@ button{
     margin: 30px auto;
     margin-top: 7rem;
     height: 75%;
-    width: 100%;    
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
 }
 
 /* styling for the actual flash card  */
@@ -72,9 +76,9 @@ button{
     display: flex;
     flex-direction: column;
     border: 2px solid white;
-    margin: 20px auto;
+    /* margin: 2rem; */
     margin-top: 2.5rem;
-    padding: 3rem;
+    /* padding: 3rem; */
     height: 85%;
     width: 80%;
     color: white;
@@ -108,8 +112,11 @@ button{
     margin: 4rem auto;
 }
 h3{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .option-box{
     margin: 1rem;
+}
+.answer{
+    display: none;
 }
