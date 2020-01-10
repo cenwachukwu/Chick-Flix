@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+    
     font-family: 'Roboto Mono', monospace;
+}
+
+#results{
+    color: white;
 }
 
 html, body {
@@ -70,9 +75,23 @@ button{
     align-items: center;
     justify-content: center;   
 }
-
+/* styling for pagination */
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .active-slide{
+    opacity: 1;
+    z-index: 2;
+  }
 /* styling for the actual flash card  */
 .quiz-container{
+    position: relative;
     display: flex;
     flex-direction: column;
     border: 2px solid white;
