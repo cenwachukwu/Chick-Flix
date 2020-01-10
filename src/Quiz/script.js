@@ -1,12 +1,5 @@
 const modalBox = document.getElementById('Quiz-Modal-Slide');
 const openModal = document.querySelector('.open-modal');
-const Quiz = document.querySelectorAll(".Quiz");
-const category = document.querySelector(".category");
-const Question = document.querySelector(".Question");
-const answer = document.querySelector(".answer");
-const next = document.querySelector(".next");
-const input = document.querySelector(".input");
-const submitInput = document.querySelector(".option1");
 
 function openQuizSlide() {
     modalBox.style.display = "block";
@@ -19,7 +12,6 @@ function closeQuizSlide() {
 }
 
 // data for the quiz
-
 const myQuestions = [
     {
       question: "who are you?",
