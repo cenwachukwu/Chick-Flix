@@ -128,7 +128,8 @@ button{
 
 /* inside the modal */
 .question{
-    margin-top: 7rem;
+    height: 100%;
+    margin-top: 5rem;
     margin-bottom: 2rem;
     font-size: 2rem;
 }
@@ -152,6 +153,58 @@ label{
     padding-top: 2rem;
     padding-right: 4rem;
 }
+
+@media only screen and (min-height: 821px){
+    .question{
+        margin-top: 7rem;
+    }
+}
+
+@media only screen and (max-width: 1134px){
+    .question{
+        padding: 0.3rem;
+        margin-top: 2.5rem;
+        font-size: 1.7rem;
+    }
+    .answers{
+        font-size: 1rem;
+    }
+
+    label{
+        margin: 0.3rem;
+    }
+
+}
+
+@media only screen and (max-width: 850px){
+    .question{
+        padding: 0.5rem;
+        margin-top: 2.5rem;
+        font-size: 1.3rem;
+    }
+    .answers{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .question{
+        padding: 0.5rem;
+        margin-top: 1rem;
+        font-size: 1rem;
+        text-align: left;
+    }
+    .answers{
+        font-size: 0.8rem;
+        /* text-align: left; */
+    }
+
+    label{
+        margin: 0.3rem;
+    }
+
+}
+
 
 @media only screen and (max-width: 375px){
     .question{
