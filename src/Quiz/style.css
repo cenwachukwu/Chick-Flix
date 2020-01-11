@@ -286,6 +286,7 @@ label{
     }
     .answers{
         font-size: 2px;
+        display: inline;
     }
 }
 
