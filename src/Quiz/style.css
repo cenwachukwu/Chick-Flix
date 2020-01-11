@@ -162,9 +162,9 @@ label{
 
 @media only screen and (max-width: 1134px){
     .question{
-        padding: 0.3rem;
-        margin-top: 2.5rem;
-        font-size: 1.7rem;
+        padding: 0.2rem;
+        /* margin-top: 2.5rem; */
+        font-size: 1rem;
     }
     .answers{
         font-size: 1rem;
@@ -176,6 +176,18 @@ label{
 
 }
 
+@media only screen and (max-width: 1024px){
+    .question{
+        padding: 0.3rem;
+        /* margin-top: 6rem; */
+        font-size: 1.2rem;
+    }
+    .answers{
+        font-size: 1.2rem;
+    }
+}
+
+
 @media only screen and (max-width: 850px){
     .question{
         padding: 0.5rem;
@@ -184,6 +196,16 @@ label{
     }
     .answers{
         font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .question{
+        /* margin-top: 4rem; */
+        /* font-size: 1.rem; */
+    }
+    .answers{
+        font-size: 1rem;
     }
 }
 
@@ -205,21 +227,55 @@ label{
 
 }
 
-
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 414px){
     .question{
         padding: 0.5rem;
+        padding-bottom: 0;
         margin-top: 1rem;
         font-size: 1rem;
         text-align: left;
     }
     .answers{
-        font-size: 0.8rem;
+        font-size: 0.5rem;
         /* text-align: left; */
     }
 
     label{
         margin: 0.3rem;
+    }
+
+}
+
+@media only screen and (max-width: 375px), (max-width: 375px){
+    .question{
+        padding: 0.5rem;
+        padding-bottom: 0;
+        margin-top: 0.5rem;
+        font-size: 0.7rem;
+        text-align: left;
+    }
+    .answers{
+        font-size: 0.5rem;
+    }
+
+    label{
+        margin: 0.3rem;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+    .question{
+        padding: 0.2rem;
+        margin-top: 0rem;
+        font-size: 0.5rem;
+    }
+    .answers{
+        font-size: 6px;
+    }
+
+    label{
+        margin: 0;
     }
 
 }
