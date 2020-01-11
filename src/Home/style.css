@@ -172,12 +172,12 @@ a:hover{
         margin-top: 6rem;
     }
     .link-Button{
-        padding-top: 0.5rem;
+        padding-top: 1rem;
         width: 50%;
         height: 4rem;
     }
     a{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
