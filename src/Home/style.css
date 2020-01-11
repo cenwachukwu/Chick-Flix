@@ -22,7 +22,7 @@ html, body {
 
 .headertag{
     margin: 0 auto;
-    margin-top: 10rem;
+    margin-top: 9rem;
     font-size: 8rem;
     font-family: 'Girassol', cursive;
     /* border: 2px solid black; */
@@ -72,16 +72,11 @@ a:hover{
     }
 
     .headertag{
-        margin-top: 20rem;
+        margin-top: 8rem;
         font-size: 5rem;
         width: 80%;
         
     }
-    
-    h2{
-        text-align: center;
-    }
-
     p{
         font-size: 1.5rem;
         text-align: center;
@@ -90,7 +85,7 @@ a:hover{
 }
 
 /* large devices and ipad */
-@media only screen and (max-width: 992px), (max-width: 768px){
+/* @media only screen and (max-width: 992px), (max-width: 768px){
     .headertag{
         margin-top: 13rem;
     }
@@ -104,36 +99,34 @@ a:hover{
         font-size: 2.8rem;
     }
 
-}
+} */
 
-
-/* extra small devices like iphones */
-@media only screen and (min-device-width : 320px) and (max-device-width : 560px){
+@media only screen and (max-width: 890px){
     .headertag{
-        font-size: 2.5rem;
-        margin-top: 11.5rem;
+        margin-top: 6rem;
     }
 
-    p{
-        text-align: justify;
-        font-size: 1rem;
-        margin-top: 2rem;
+}
+@media only screen and (max-width: 737px){
+    .headertag{
+        font-size: 4.3rem;
     }
-
-    .link-Button{
-        width: 30%;
-        margin: 5px;
-        padding-top: 1rem;
-        height: 4rem;
-    }
-
     a{
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
-    .link-button-home{
-        margin-top: 2rem;
+
+}
+@media only screen and (max-width: 585px){
+    .headertag{
+        margin-top: 6rem;
     }
+    .link-Button{
+        padding-top: 1rem;
+        width: 40%;
+        height: 5rem;
+    }
+   
 }
 
 @media only screen and (max-device-width : 480px){
