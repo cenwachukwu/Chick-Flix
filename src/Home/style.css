@@ -174,10 +174,10 @@ a:hover{
     .link-Button{
         padding-top: 0.5rem;
         width: 50%;
-        height: 6rem;
+        height: 4rem;
     }
     a{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
 
