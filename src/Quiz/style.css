@@ -281,11 +281,11 @@ label{
 }@media only screen and (max-height: 375px){
     .question{
         padding: 0rem;
-        margin-top: 0rem;
-        font-size: 4px;
+        margin-top: 1rem;
+        font-size: 1.5rem;
     }
     .answers{
-        font-size: 2px;
+        font-size: 1rem;
         display: block;
     }
     label{
