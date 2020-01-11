@@ -188,6 +188,15 @@ a:hover{
 @media only screen and (max-height: 375px){
     .headertag{
         margin-top: 3rem;
+        font-size: 4rem;
+    }
+    .link-Button{
+        padding-top: 1rem;
+        width: 50%;
+        height: 4rem;
+    }
+    a{
+        font-size: 1.5rem;
     }
 }
 
