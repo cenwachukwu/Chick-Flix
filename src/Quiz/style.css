@@ -278,4 +278,15 @@ label{
         margin: 0;
     }
 
+}@media only screen and (max-height: 375px){
+    .question{
+        padding: 0rem;
+        margin-top: 0rem;
+        font-size: 4rem;
+    }
+    .answers{
+        font-size: 2px;
+    }
 }
+
+
