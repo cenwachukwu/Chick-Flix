@@ -282,7 +282,7 @@ label{
     .question{
         padding: 0rem;
         margin-top: 0rem;
-        font-size: 4rem;
+        font-size: 4px;
     }
     .answers{
         font-size: 2px;
