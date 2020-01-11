@@ -152,3 +152,21 @@ label{
     padding-top: 2rem;
     padding-right: 4rem;
 }
+
+@media only screen and (max-width: 375px){
+    .question{
+        padding: 0.5rem;
+        margin-top: 1rem;
+        font-size: 1rem;
+        text-align: left;
+    }
+    .answers{
+        font-size: 0.8rem;
+        /* text-align: left; */
+    }
+
+    label{
+        margin: 0.3rem;
+    }
+
+}
