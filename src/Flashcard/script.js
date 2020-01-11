@@ -2,6 +2,10 @@ const modalBox = document.getElementById('Quiz-Modal-Slide');
 const openModal = document.querySelector('.open-modal');
 const Quiz = document.querySelectorAll(".Quiz");
 
+// Quiz.addEventListener("click", function(){
+//     Quiz.classList.add("visible");
+// })
+
 //opening the modal
 function openQuizSlide() {
     modalBox.style.display = "block";

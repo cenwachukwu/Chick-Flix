@@ -166,6 +166,21 @@ a:hover{
 }
 
 /* small devices */
+@media only screen and (max-width: 375px){
+    .headertag{
+        font-size: 3rem;
+        margin-top: 6rem;
+    }
+    .link-Button{
+        padding-top: 0.5rem;
+        width: 50%;
+        height: 6rem;
+    }
+    a{
+        font-size: 0.8rem;
+    }
+}
+
 @media only screen and (max-width: 320px){
     .headertag{
         font-size: 2.1rem;

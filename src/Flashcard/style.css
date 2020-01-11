@@ -67,7 +67,8 @@ contains styling for the group of flash cards
     margin-top: 11rem;
     /* padding: 10rem; */
     height: 65%;
-    width: 75%;    
+    width: 75%;  
+    /* perspective: 100px;   */
 }
 
 /* styling for the actual flash card  */
@@ -80,6 +81,8 @@ contains styling for the group of flash cards
     width: 80%;
     color: white;
     position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
 }
 
 /* this is styling for the span that closes the whole modal  */
@@ -143,7 +146,7 @@ button{
 
 
 .Quiz:hover .front-card{
-    transform: rotateY(-180deg);
+    transform: rotateY(180deg);
 }
 
 .Quiz:hover .back-card{
@@ -154,15 +157,11 @@ button{
     border-color: rgb(187, 221, 63);
     background-color: black;
     font-size: 45px;
-    overflow: hidden;
-    backface-visibility: hidden;
 }
 
 .back-card{
     background-color: black;
     transform: rotateY(-180deg);
-    overflow: hidden;
-    backface-visibility: hidden;
 }
 
 /* media queries */
@@ -190,7 +189,7 @@ button{
 }
 
 /* extra small devices like iphones */
-@media only screen and (min-device-width : 320px) and (max-device-width : 560px){
+@media only screen and (max-device-width : 560px){
     .flashCard__buttons{
         grid-template-columns: repeat(1, 1fr);
     }
