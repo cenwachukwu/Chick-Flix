@@ -154,10 +154,13 @@ button{
     border-color: rgb(187, 221, 63);
     font-size: 45px;
     overflow: hidden;
+    backface-visibility: hidden;
 }
 
 .back-card{
     transform: rotateY(-180deg);
+    overflow: hidden;
+    backface-visibility: hidden;
 }
 
 /* media queries */
