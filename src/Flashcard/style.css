@@ -152,12 +152,14 @@ button{
 
 .front-card{
     border-color: rgb(187, 221, 63);
+    background-color: black;
     font-size: 45px;
     overflow: hidden;
     backface-visibility: hidden;
 }
 
 .back-card{
+    background-color: black;
     transform: rotateY(-180deg);
     overflow: hidden;
     backface-visibility: hidden;
