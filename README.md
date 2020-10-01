@@ -18,5 +18,5 @@ A purely javaascript based learning application which features flashcard decks a
 
 ## Extras:
 * Deployed site:
-    * https://chickflix.netlify.com/
+    * https://chick-flix.netlify.app/
 
